@@ -18,9 +18,7 @@ it if it is odd and asking for the next. Once an even Fibonacci number is obtain
 Use the generators to print out the first 6 even Fibonacci numbers.
 */
 
-function* spitsNumbers() {
-    let fib1 = 0;
-    let fib2 = 1;
+function* spitsNumbers(fib1 = 0, fib2= 1) {
     while(true) {
         let fib3 = fib1;
         fib1 = fib2;
@@ -44,7 +42,7 @@ function* checksNumbers() {
             continue;
         }
     }
-    return; // finished printing 6 numbers 
+    return "THAT WAS 6 NOW DONE = TRUE"; // finished printing 6 numbers 
 }
 
 
