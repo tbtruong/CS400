@@ -4,6 +4,13 @@ code to call the function on each value of the array [1,2,3,4,5,6,7].
 Note: The .map() method on Array is your friend here
 */
 
+const cube = (x) => {
+    return x**3;
+}
 
-let newNumbs = [1,2,3,4,5,6,7].map(x => x**3);
+let newNumbs = [1,2,3,4,5,6,7].map(cube);
 console.log(newNumbs);
+
+//Can be simplified to a one liner without the function 
+let oneLine = [1,2,3,4,5,6,7].map(x => x**3);
+console.log(oneLine);
