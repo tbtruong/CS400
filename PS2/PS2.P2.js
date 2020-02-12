@@ -5,11 +5,26 @@ turn.
 Use the generator to print the words, one per line, of the string “All I know is something like a
 bird within her sang”. 
 */
-/*
-let func = (...args) => {
-    console.log(args);
-    for (const arg of args) {
-    console.log(arg);
-    }
+
+
+   function* sentToWords(sentence) {
+       const words = sentence.split(" "); 
+       while (words) {
+           yield words.shift()
+       }
+       return;
    }
-   func(1,2,3,4,5,6); */
+
+   const test = sentToWords("All I know is something like a bird within her sang");
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   console.log(test.next().value);
+   
