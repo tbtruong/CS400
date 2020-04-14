@@ -3,6 +3,7 @@ import {WEATHER} from './Weather';
 export const WEATHERS: WEATHER[] =
 [
     {
+        name: "Boston",
         latitude: 42.3601,
         longitude:71.0589,
         timezone:"EST",
@@ -12,6 +13,7 @@ export const WEATHERS: WEATHER[] =
     },
 
     {
+        name: "Ideal Boston",
         latitude:42.3601,
         longitude:71.0589,
         timezone:"EST",

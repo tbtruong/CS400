@@ -8,7 +8,7 @@
 
   <ul>
   <li *ngFor="let weather of weathers">
-    <label (click)="selectWeather(weather)">{{weather.currently}}</label>
+    <label (click)="selectWeather(weather)">{{weather.name}}</label>
   </li>
   </ul>
 
@@ -16,6 +16,6 @@
 
 <div *ng>
 <!-- display selected contact -->
-  <h3>Details for {{selectedWeather.currently}} </h3>
+  <h3>Details for {{selectedWeather.name}} </h3>
 <input type="text" [(ngModel)]="selectedWeather.currently">
 </div>
